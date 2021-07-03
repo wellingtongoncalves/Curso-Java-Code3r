@@ -3,7 +3,13 @@ package fundamentos;
 public class Console {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.print("Bom ");
+		System.out.print(" Dia! \n");
+		
+		System.out.println("Bom");
+		System.out.println("Dia");
+		System.out.printf("O nome do filme é:  %d  %d  %d  %d %d %d %n",1,2,3,4,5,6);
+		System.out.printf("Salário:  %.1f%n" , 1234.5678);
 
 	}
 
