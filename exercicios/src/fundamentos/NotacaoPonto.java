@@ -1,61 +1,39 @@
-/*package fundamentos;
-
-public class NotacaoPonto {
-
-	public static void main(String[] args) {
-		
-		String s = "Bom dia B  " ;
-		s = s.toUpperCase();
-		s = s.replace("B", "Senhora");
-		
-		System.out.println(s);
-
-	}
-
-}*/
-
 package fundamentos;
 
 public class NotacaoPonto {
-	
 	public static void main(String[] args) {
 		
-		/*String s = "Bom dia C";
-		s = s.toUpperCase();
-		s = s.replace("BOM", "Well");*/
-		// BOM DSenhoraA C
-		//BSenhoraM DIA C
-		// Well DIA C 
-		String s = "BoM dia x";
-		s = s.replace("M", "Well"); //Wellom dia x ou BOWELL DIA X!!!
-		s = s.toUpperCase();
-		s = s.concat("!!!");
+		// double a = 2.3;
+		//String s = "Bom dia X";
+		//s = s.replace("X", "Senhor"); // troque Letra Maiúscula X pela palavra Senhor
+		//s = s.toUpperCase(); // depois converta toda string para maiúscula. BOM DIA SENHOR
+		//s = s.replace("X", "Senhor");
+		//System.out.println(s);
 		
 		
-		System.out.println(s);
-		String x = "Well".toUpperCase();
+		String s = "Bom dia X";
+		
+		s = s.replace("X", "Senhor"); 
+		s = s.toUpperCase(); 
+	    s = s.concat("!!!"); 
+	    
+		System.out.println(s);// NO FINAL O CÓD FICA ASSIM (BOM DIA SENHOR!!!)
+		
+		String x = "Leo".toUpperCase();
 		System.out.println(x);
-		//System.out.println("Well".toUpperCase());
 		
-		String y = "Bom dia G ".replace("G", "Ton");
+		String y = "Bom dia X "
+				.replace("X", "Gui")
+				.toUpperCase()
+				.concat(s); // ou .concat("!!!!!!!!----");
+				
 		System.out.println(y);
 		
-		String j = "Boa Tarde W ".replace("W", "Wellington");
-		System.out.println(j);
 		
-		String k = "Boa noite MANO".replace("MANO", "IRMÃO")
-				.toLowerCase()
-				.concat(y);//boa noite irmãoBom dia Ton 
-		System.out.println(k);
-		
-		// Tipos primitivos nÃ£o tem o operador "."
-				int a = 3;
-				System.out.println(a);
-
-		
-		
+		// Tipos primitivos não tem o operador "."
+		int a = 3;
+		System.out.println(a);
 		
 		
 	}
 }
-
