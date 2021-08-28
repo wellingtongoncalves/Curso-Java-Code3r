@@ -5,21 +5,20 @@ import java.util.Scanner;
 public class Wrappers {
 
 	public static void main(String[] args) {
-		
-		//Scanner entrada = new Scanner (System.in);
-		
+		Scanner entrada = new Scanner(System.in);
+
 		// byte
 		Byte b = 100;
 		Short s = 1000;
-		//Integer i = Integer.parseInt(entrada.next()); // int
-		Integer i = 1000; // int
+		Integer i = 20000;
+		// Integer.parseInt(entrada.next()); // INT // entrada.next
+		// pega string e nextLine Inteiros
 		Long l = 100000L;
-		
-		System.out.println(b.byteValue());
-		System.out.println(s.toString());
-		System.out.println(i*3);
-		System.out.println(i/3);
-		//entrada.close();
+
+		System.out.println(b.byteValue()); // Valor da variável 100
+		System.out.println(s.toString()); // De inteiro 1000 para String "1000"
+		System.out.println(i * 3);
+		System.out.println(l/3);
 		
 		Float f = 123.10F;
 		System.out.println(f);
@@ -29,14 +28,12 @@ public class Wrappers {
 		
 		Boolean bo = Boolean.parseBoolean("true");
 		System.out.println(bo);
-		//System.out.println(bo.toString().toUpperCase());
-		System.out.println((" "+ bo).toUpperCase());
+		System.out.println(bo.toString().toUpperCase());
 		
-		Character c = '#';
-		//System.out.println(c.toString());
-		System.out.println(c + "...");
-		
-		
-	}
+		Character c = '#'; // char
+		System.out.println(c + "... ");
 
+		entrada.close();
+
+	}
 }
